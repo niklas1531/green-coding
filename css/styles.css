@@ -49,19 +49,16 @@ button {
 }
 
 /* Sections */
-.colored-section {
-    background-color: lightgreen;
-    color: #fff;
-    border-radius: 0.25rem;
-}
+
 .grey-section {
-    /*background-color: #fafafa;*/
     background-color: #e3e2de;
     color: #000;
+    padding: 5% 0 5%;
 }
 .white-section {
     background-color: #ffffff;
     color: #000;
+    padding: 5% 0 5%;
 }
 .black-section {
     background-color: #000;
@@ -120,44 +117,6 @@ button {
     padding-bottom: 3px;
 }
 
-/* Berufserfahrung
-.berufserfahrung-box {
-    padding: 4.5%;
-}
-
-.berufserfahrung-image {
-    width: 60px;
-    margin-bottom: 10px;
-} */
-
-/* Zertifikate */
-#zertifikate {
-    background-color: #fafafa;
-    color: #000;
-}
-
-/* Skills */
-.skill-box {
-    padding: 4.5%;
-}
-
-@media (max-width: 580px) {
-    .skill-box {
-        width: 50%;
-    }
-}
-
-.skills-image {
-    margin-bottom: 1rem;
-    font-size: 3em;
-    width: 90px;
-    color: #56BBF1;
-
-}
-
-.skills-image:hover {
-    color: #4D77FF;
-}
 /* FEEDBACK */
 
 .feedback {
@@ -191,6 +150,7 @@ button {
     padding: 2%;
 }
 
+
 /* ABOUT */
 
 .team {
@@ -198,7 +158,15 @@ button {
     align-items: center;
     justify-content: center;
 }
+.linkedin {
+    /*width: 10%;*/
+    color: #2eb872;
+}
 
+.linkedin:hover {
+    transform: scale(2, 2);
+    color: #2eb872;
+}
 .team-member {
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
@@ -206,6 +174,39 @@ button {
     box-shadow: 10px 20px 15px silver;
     height: 300px;
     background-color: #fff;
+}
+/*KPIS*/
+.kpis {
+    margin:  5% 25% 0;
+}
+.kpi-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.kpi-image {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 0;
+}
+.kpi-text {
+    width: calc(100% - 160px);
+    padding-left: 40px;
+    text-align: left;
+}
+.kpi-link {
+    color: #2eb872;
+}
+.kpi-link:hover {
+    text-decoration: underline;
+    transition: opacity .35s;
+    transition-property: opacity;
+    transition-duration: 0.35s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    color: #2eb872;
 }
 
 /*FOOTER*/
