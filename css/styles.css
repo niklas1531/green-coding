@@ -114,6 +114,12 @@ button {
     padding-bottom: 3px;
 }
 
+.logo-image {
+    height: 100px;
+    width: 90px;
+    margin-bottom: 0;
+}
+
 /* FEEDBACK */
 
 .feedback {
