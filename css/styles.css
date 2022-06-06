@@ -31,9 +31,11 @@ button {
     border-radius: 0.25rem;
 
 }
+
 .toggler {
     color: #fff;
 }
+
 .line {
     max-width: 50px;
     border-color: #2eb872;
@@ -53,25 +55,27 @@ button {
 }
 
 /* Banner on top of the Website */
-.banner {
-    height: 500px;
-    background-image: url('../images/Background.png');
-    background-size: cover;
-    background-position: center;
-}
 
 .banner-text {
     color: #fafafa;
     font-weight: 1000;
-    padding-top: 175px;
+    padding-top: 100px;
     padding-bottom: 200px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-text h4 {
+    margin-bottom: 3%;
 }
 
 /* Sections */
 .background-section {
     background-color: #e3e2de;
     padding: 5% 0 0;
+    height: 500px;
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .grey-section {
@@ -112,9 +116,11 @@ button {
     font-size: 2.5rem;
     color: #fff;
 }
+
 .navbar-brand h3 {
     margin-top: 1rem;
 }
+
 .navbar-brand:hover {
     color: #2eb872;
 }
@@ -140,18 +146,11 @@ button {
     text-decoration: none;
 }
 
-.btn-light {
-    border: none;
-    background-color: #fff;
-    color: #000;
-    padding-top: 10px;
-    padding-bottom: 3px;
-}
-
 .logo-image {
     height: auto;
-    width: 60px;
+    width: 40px;
     margin-bottom: 0;
+    margin-top: 5%;
 }
 
 /* FEEDBACK */
@@ -279,9 +278,34 @@ button {
         width: 30%;
         height: auto;
     }
-.navbar-brand h3 {
-    margin-top: 0.8rem;
+
+    .logo-image {
+        margin-top: 0;
+    }
+
+    .navbar-brand h3 {
+        margin-top: 0.8rem;
+    }
+
+    .background-section {
+        height: 300px;
+    }
+
+    .banner-text {
+        padding-top: 50px;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+.btn-size {
+    font-size: .875rem;
+    padding: 0.25rem 0.5rem;
 }
+    .banner-text h4 {
+        font-size: 1rem;
+    }
+
     .section-heading {
         font-size: 2.5rem;
     }
@@ -308,10 +332,14 @@ button {
 
     .kpi-text {
         padding-left: 0;
+        width: 100%;
     }
 
     .team {
         margin-left: 0;
         margin-right: 0;
+    }
+    .team-container {
+        width: 80%;
     }
 }
