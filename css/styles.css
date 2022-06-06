@@ -45,14 +45,34 @@ button {
     color: #fff;
 }
 
-/* OVERVIEW */
+/* OVERVIEW -> wird glaube ich nicht mehr benötigt*/
 .overview {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Banner on top of the Website */
+.banner {
+    height: 500px;
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    color: #fafafa;
+    font-weight: 1000;
+    padding-top: 175px;
+    padding-bottom: 200px;
+    background: rgba(0,0,0,0.3);
+}
+
 /* Sections */
+.background-section {
+    background-color: #e3e2de;
+    padding: 5% 0 0;
+}
 
 .grey-section {
     background-color: #e3e2de;
