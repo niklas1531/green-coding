@@ -81,7 +81,21 @@ button {
     justify-content: center;
     align-items: center;
 }
-
+.overview-button {
+    color: #28a745;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #28a745;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.overview-button:hover {
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+}
 .grey-section {
     background-color: #e3e2de;
     color: #000;
@@ -292,7 +306,7 @@ button {
     }
 
     .background-section {
-        height: 500px;
+        height: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
