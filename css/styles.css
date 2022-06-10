@@ -1,12 +1,14 @@
 /* General */
 html {
     background-color: #fafafa;
+    height: 100%;
 }
 
 body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     /*box-sizing: border-box;*/
+    height: 100%;
 }
 
 p {
@@ -72,8 +74,7 @@ button {
 /* Sections */
 .background-section {
     background-color: #e3e2de;
-    /*padding: 5% 0 0;*/
-    height: 630px;
+    height: 89%;
     background-image: url('../images/Background.png');
     background-size: cover;
     background-position: center;
