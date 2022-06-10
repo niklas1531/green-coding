@@ -222,6 +222,7 @@ button {
 .linkedin {
     /*width: 10%;*/
     color: #2eb872;
+    margin: 10%;
 }
 
 .linkedin:hover {
@@ -237,6 +238,11 @@ button {
     box-shadow: 10px 20px 15px silver;
     height: 300px;
     background-color: #fff;
+}
+
+.team-pictures {
+    height: 160px;
+    width: 160px;
 }
 
 /*KPIS*/
