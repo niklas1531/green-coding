@@ -245,6 +245,7 @@ button {
 .team-pictures {
     height: 160px;
     width: 160px;
+    object-fit: cover;
 }
 
 /*KPIS*/
