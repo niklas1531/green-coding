@@ -57,36 +57,64 @@
         </ul>
     </div>
 </nav>
-<section class="quiz grey-section">
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer"/>
-                    <label for="a" id="a_text">Answer</label>
-                </li>
+<section class=" grey-section quiz-section">
+    <h1 class="section-heading"> Test yourself!</h1>
+    <section class="quiz row">
+        <div class="col-lg-4">
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h2 class="question" id="question">Question Text</h2>
+                    <p id="whichQuestion">#Question in quiz</p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer"/>
+                            <label for="a" id="a_text">Answer</label>
+                        </li>
 
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer"/>
-                    <label for="b" id="b_text">Answer</label>
-                </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer"/>
+                            <label for="b" id="b_text">Answer</label>
+                        </li>
 
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer"/>
-                    <label for="c" id="c_text">Answer</label>
-                </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer"/>
+                            <label for="c" id="c_text">Answer</label>
+                        </li>
 
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer"/>
-                    <label for="d" id="d_text">Answer</label>
-                </li>
-            </ul>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer"/>
+                            <label for="d" id="d_text">Answer</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
         </div>
-        <button id="submit">Submit</button>
-    </div>
-</section>
+        <div class="col-lg-4">
+            <div class="quiz-container ">
+                <div class="quiz-header">
+                    <h2 class="question">Which is the most efficient programming language?</h2>
+                    <p>(Sort the list. Top=most efficient)</p>
+                    <ul id="quizSort">
+                        <li>Java</li>
+                        <li>Swift</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <button id="quizSort-btn" onclick="checkAnswer()">Check Answer</button>
+            </div>
+        </div>
+        <div class=" col-lg-4" >
+            <div class="quiz-container">
+                <div class="quiz-header"></div>
+                <button></button>
 
+            </div>
+        </div>
+    </section>
+</section>
 <footer id="footer" class="black-section">
     <div class="container-fluid">
         <div class="page-footer">
@@ -100,6 +128,7 @@
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 <script src="../index.js"></script>
 </body>
 </html>

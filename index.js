@@ -55,6 +55,7 @@ const quizData = [
 
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
+const questionNumber = document.getElementById('whichQuestion')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
@@ -75,6 +76,7 @@ function loadQuiz() {
     const currentQuizData = quizData[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
+    questionNumber.innerText = 'Question ' + (currentQuiz+1) + ' / ' + quizData.length
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
@@ -116,3 +118,36 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+
+
+
+
+
+
+//_____________________ QUIZ 2 ____________
+new Sortable(quizSort);
+const correctAnswers = [
+    "Python",
+    "Java",
+    "Swift",
+    "C#",
+    "C++",
+];
+function checkAnswer() {
+    const li = document.querySelectorAll("#quizSort li");
+    let answers = [];
+    li.forEach(function (text) {
+        answers.push(text.innerHTML);
+    });
+    if (JSON.stringify(correctAnswers) === JSON.stringify(answers)) {
+        document.getElementById('quizSort-btn').textContent = "Correct :)";
+        document.getElementById('quizSort-btn').style.backgroundColor = "green";
+
+
+        // alert("Correct :)");
+    } else {
+        // alert("Try Again...");
+        document.getElementById('quizSort-btn').textContent = "Try Again...";
+        document.getElementById('quizSort-btn').style.backgroundColor = "red";
+    }
+}
