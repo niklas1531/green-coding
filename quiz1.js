@@ -58,7 +58,7 @@ function loadQuiz() {
     const currentQuizData = quizData[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
-    questionNumber.innerText = 'Question ' + (currentQuiz+1) + ' / ' + quizData.length
+    questionNumber.innerText = 'Question ' + (currentQuiz + 1) + ' / ' + quizData.length
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
@@ -93,9 +93,11 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             quiz.innerHTML = `
+            <div style="position: relative; transform: translateY(-50%); top: 50%;">
                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
     
                <button onclick="location.reload()">Reload</button>
+               </div>
                `
         }
     }

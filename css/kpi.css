@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 5%;
 }
+
 .list-disc {
     text-align: left;
 }
@@ -10,8 +11,21 @@
     text-align: left;
 }
 
+
+/* KPI ITERATION VS RECURSION */
+.it-rec-images {
+    width: 300px;
+    height: auto;
+    display: flex;
+}
+
 @media (max-width: 900px) {
     .kpi-content {
         margin-top: 20%;
+    }
+
+    /* KPI ITERATION VS RECURSION */
+    .it-rec-images {
+        display: block;
     }
 }
