@@ -54,7 +54,7 @@
                     <a class="nav-link" href="../index.html#contact">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <button id="dark-mode-btn"class=" nav-link dark-mode-btn">
+                    <button id="dark-mode-btn" class=" nav-link dark-mode-btn">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                 </li>
@@ -63,9 +63,54 @@
     </nav>
 
 
-<section>
-    
-</section>
+    <section class="beige-section kpi-content">
+        <div class="container-fluid">
+            <h1>Iteration vs Recursion</h1>
+            <hr class="line">
+            <p class="lead">
+                In this section you will learn the differences between recursion and iteration, especially with regard
+                to
+                green coding.
+            </p>
+            <h2>What is recursion and iteration? </h2>
+            <ul class="list-disc">
+                <li>Iteration and recursion are multiple executions of one or more instructions.</li>
+                <li>With recursion, your algorithm calls itself either directly or via other functions.</li>
+                <li>The iteration is realized by loops (for, while). The loop is terminated by a termination condition.
+                </li>
+                <li>Any recursion can also be converted into an iterative solution and vice versa.</li>
+            </ul>
+            <h2>What do recursion and iteration have to do with green code?</h2>
+            <ul class="list-disc">
+                <li>In programming, a decision must be made depending on the application as to whether iteration or
+                    recursion
+                    is used.</li>
+                <li>If this decision is made incorrectly, it can lead to serious disadvantages in energy consumption,
+                    runtime
+                    and thus the energy efficiency of your program.</li>
+            </ul>
+
+            <p>In the following you will see how a faculty can be calculated with both iteration and recursion:</p>
+
+
+            In this case, the loop is not only easier to read, but also more memory-efficient and also much better in
+            runtime behavior.
+            Another example is the comparison between the recursive and iterative versions of the program "The Towers of
+            Hanoi".
+            <p>How does the game operate in general?</p>
+            The game consists of three sticks of the same size, A, B and C, on which several punched discs are placed,
+            all different sizes. At the beginning, all the discs are on stick A, ordered by size, with the largest disc
+            at the bottom and the smallest at the top. The aim of the game is to move the complete stack of discs from A
+            to C.
+            In this comparison, the power consumption and execution time were measured. The measurements were taken at
+            an interval of 200 ms or 5 Hz, and the programme Towers of Hanoi with 30 hard disks was run.
+            The recursive algorithm implemented in C++ consumed an average of 322.23 joules, while its iterative version
+            consumed 1656.26 joules, an increase of more than 400 %.
+
+            It turns out that it is not possible to say in principle whether recursion or iteration is more efficient in
+            terms of energy consumption. The decision always depends on the situation.
+        </div>
+    </section>
     <footer>
         <div class="container-fluid">
             <div class="page-footer">

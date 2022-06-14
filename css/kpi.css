@@ -6,6 +6,12 @@
     text-align: left;
 }
 
-h2 {
+.kpi-content h2 {
     text-align: left;
+}
+
+@media (max-width: 900px) {
+    .kpi-content {
+        margin-top: 20%;
+    }
 }

@@ -132,7 +132,10 @@ p {
     background-color: #28a745;
     text-decoration: none;
 }
-
+/* ABOUT */
+.about-welcome , .about-text {
+    text-align: left;
+}
 /* KPIS */
 .kpi-item {
     border: 1px solid transparent;
