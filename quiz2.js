@@ -1,11 +1,11 @@
 //_____________________ QUIZ 2 ____________
 new Sortable(quizSort);
 const correctAnswers = [
-    "Python",
-    "Java",
-    "Swift",
-    "C#",
-    "C++",
+    "ArrayList",
+    "Stack",
+    "RoleList",
+    "Vector",
+    "LinkedList",
 ];
 function checkAnswer() {
     const li = document.querySelectorAll("#quizSort li");

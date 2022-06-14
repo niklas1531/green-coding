@@ -7,101 +7,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/kpi.css">
+    <link rel="stylesheet" href="../css/quiz.css">
     <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/14eafe471f.js" crossorigin="anonymous"></script>
     <title>Green Coding | KPI</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="../index.html">
+<nav class="navbar navbar-expand-lg fixed-top ">
+    <a class="navbar-brand" href="../index.html">
 
-            <img class="logo-image" src="../images/logo.svg" align="left">
-            <h3>Green Coding</h3>
-        </a>
+        <img class="logo-image" src="../images/logo.svg" align="left" alt="logo">
+        <h3>Green Coding</h3>
+    </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars toggler"></i>
-        </button>
+        <i class="fa-solid fa-bars toggler"></i>
+    </button>
 
-        <!-- Hier ist die Navigationsleiste mit den Verlinkungen zu den verschiedenen Seiten -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#kpis">KPIS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#team">TEAM</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#contact">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <button id="dark-mode-btn" class=" nav-link dark-mode-btn">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Hier ist die Navigationsleiste mit den Verlinkungen zu den verschiedenen Seiten -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#kpis">KPIS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#team">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#contact">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <button id="dark-mode-btn" class=" nav-link dark-mode-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <section class="beige-section kpi-content">
-        <div class="container-fluid">
-            <h1>Data Structures</h1>
-            <hr class="line">
-            <p class="lead">
-                Great that you are here and want to learn more about green code's key performance indicators (KPIs)!
-                This KPI deals with a basic concept of programming, which is a data structure. Let's get started!
-            </p>
-            <h2>What is a data structure?</h2>
-            <ul class="list-disc">
-                <li>A data structure is a format for organizing, processing, retrieving, and storing data</li>
-                <li>It is an important concept as it allows to access and work with data appropriately</li>
-                <li>Each data structure contains information about the data values, relationships between the data, and
-                    (in some cases) functions that can be applied to the data (e.g., sort the data or add specific
-                    values)</li>
-                <li>Most modern programming languages have built-in data structures to choose from (e.g., Arrays, Lists,
-                    Maps, Sets, etc.)</li>
-                <li>A reasonable choice of the data structure is very dependent on the problem you are dealing with
-                    (e.g., what data will be stored, which operations should the data structure provide, etc.)</li>
-            </ul>
-            <h2>What do data structures have to do with green code?</h2>
-            <h2>How do you measure the quality of a data structure with regards to green code?</h2>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container-fluid">
-            <div class="page-footer">
-                <a class="footer-link" href="../index.html">HOME</a>
-                <a class="footer-link" href="../index.html#about">ABOUT</a>
-                <a class="footer-link" href="../index.html#kpis">KPIS</a>
-                <a class="footer-link" href="../index.html#team">TEAM</a>
-                <a class="footer-link" href="../index.html#contact">CONTACT</a>
+<section class="beige-section kpi-content">
+    <div class="container-fluid">
+        <i class="fa-solid fa-sitemap"></i>
+        <h1>Data Structures</h1>
+        <hr class="line">
+        <p class="lead">
+            Great that you are here and want to learn more about green code's key performance indicators (KPIs)!
+            This KPI deals with a basic concept of programming, which is a data structure. Let's get started!
+        </p>
+        <div style="margin-top: 5%">
+            <div class="container-fluid kpi2-item-box">
+                <h2>What is a data structure?</h2>
+                <div class="carousel-part">
+                    <a class="" type="button" href="#carousel" data-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <div>
+                        <div id="carousel" class="carousel slide" data-ride="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    A data structure is a format for organizing, processing, retrieving, and storing
+                                    data
+                                </div>
+                                <div class="carousel-item">
+                                    It is an important concept as it allows to access and work with data appropriately
+                                </div>
+                                <div class="carousel-item">
+                                    Each data structure contains information about the data values, relationships
+                                    between
+                                    the data, and (in some cases) functions that can be applied to the data (e.g., sort
+                                    the
+                                    data or add
+                                    specific
+                                    values)
+                                </div>
+                                <div class="carousel-item">
+                                    Most modern programming languages have built-in data structures to choose from
+                                    (e.g.,
+                                    Arrays, Lists,
+                                    Maps, Sets, etc.)
+                                </div>
+                                <div class="carousel-item ">
+                                    A reasonable choice of the data structure is very dependent on the problem you are
+                                    dealing
+                                    with
+                                    (e.g., what data will be stored, which operations should the data structure provide,
+                                    etc.)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a type="button" href="#carousel" data-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
-            <p class="footer-copyright">Copyright © 2022 All rights reserved - Green Coding</p>
+            <div class="container-fluid kpi2-item-box">
+                <h2>What do data structures have to do with green code?</h2>
+                <div class="carousel-part">
+                    <a class="" type="button" href="#carousel2" data-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <div>
+                        <div id="carousel2" class="carousel slide" data-ride="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item ">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a type="button" href="#carousel2" data-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid kpi2-item-box">
+                <h2>How do you measure the quality of a data structure with regards to green code?</h2>
+                <div class="carousel-part">
+                    <a class="" type="button" href="#carousel3" data-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <div>
+                        <div id="carousel3" class="carousel slide" data-ride="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item">
+
+                                </div>
+                                <div class="carousel-item ">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a type="button" href="#carousel3" data-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../index.js"></script>
+    </div>
+</section>
+<section id="quiz-section" class=" grey-section quiz-section">
+    <div class="container-fluid">
+        <h1> Test yourself!</h1>
+        <hr class="line">
+        <section class="quiz row">
+            <div class="col-lg-4">
+                <div class="quiz-container" id="quiz">
+                    <div class="quiz-header">
+                        <h2 class="question" id="question">Question Text</h2>
+                        <p id="whichQuestion">#Question in quiz</p>
+                        <ul>
+                            <li>
+                                <input type="radio" name="answer" id="a" class="answer"/>
+                                <label for="a" id="a_text">Answer</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="answer" id="b" class="answer"/>
+                                <label for="b" id="b_text">Answer</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="answer" id="c" class="answer"/>
+                                <label for="c" id="c_text">Answer</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="answer" id="d" class="answer"/>
+                                <label for="d" id="d_text">Answer</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="quiz-container ">
+                    <div class="quiz-header">
+                        <h2 class="question">In General: Which data structure the most efficient?</h2>
+                        <p>(Sort the list. Top=most efficient)</p>
+                        <ul id="quizSort">
+                            <li>ArrayList</li>
+                            <li>LinkedList</li>
+                            <li>Stack</li>
+                            <li>Vector</li>
+                            <li>RoleList</li>
+                        </ul>
+                    </div>
+                    <button id="quizSort-btn" onclick="checkAnswer()">Check Answer</button>
+                </div>
+            </div>
+            <div class=" col-lg-4">
+                <div class="quiz-container">
+                    <div class="quiz-header"></div>
+                    <button></button>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+</section>
+
+<footer>
+    <div class="container-fluid">
+        <div class="page-footer">
+            <a class="footer-link" href="../index.html">HOME</a>
+            <a class="footer-link" href="../index.html#about">ABOUT</a>
+            <a class="footer-link" href="../index.html#kpis">KPIS</a>
+            <a class="footer-link" href="../index.html#team">TEAM</a>
+            <a class="footer-link" href="../index.html#contact">CONTACT</a>
+        </div>
+        <p class="footer-copyright">Copyright © 2022 All rights reserved - Green Coding</p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="../index.js"></script>
+<script src="../quiz1.js"></script>
+<script src="../quiz2.js"></script>
 </body>
 
 </html>
