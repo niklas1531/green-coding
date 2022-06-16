@@ -26,18 +26,13 @@
 .carousel-inner {
     padding: 0;
 }
-.fa-solid, .fas {
-    /*font-weight: bold;*/
-    /*color: #000;*/
-    /*font-size: 2rem;*/
-}
+
 .fa-angle-left , .fa-angle-right {
     color: #000;
 }
 .kpi2-item-box {
     border: 1px solid lightgrey;
     border-radius: 0.5rem;
-    box-shadow: 10px 20px 15px silver;
     height: 350px;
     width: 80%;
     margin-left: auto;
