@@ -7,7 +7,7 @@ $('#dark-mode-btn').click(function () {
         $(".quiz-container").css("backgroundColor", "#474747");
         $(".quiz-container").css("box-shadow", "10px 20px 15px #000");
         $(".contact-form").css("box-shadow", "10px 20px 15px #000");
-        $(".text-color").css("color", "#000");
+        $(".text-color").css("color", "#fff");
         $(".kpi-item").css("box-shadow", "10px 20px 15px #000");
         $(".kpi2-item-box").css("box-shadow", "10px 20px 15px #000");
         $(".team-member").css("box-shadow", "10px 20px 15px #000");
@@ -17,7 +17,7 @@ $('#dark-mode-btn').click(function () {
         $(".fa-sitemap").css("color", "#fff");
         $("h2").css("color", "#fff");
         $("h3").css("color", "#fff");
-        $("p").css("color", "#fff");
+        // $("p").css("color", "#fff");
         $("li").css("color", "#fff");
         $("span").css("color", "#fff");
     }
@@ -39,6 +39,7 @@ $('#dark-mode-btn').click(function () {
         $("p").css("color", "#8f8f8f");
         $("li").css("color", "#000");
         $("span").css("color", "#000");
+        $(".member-name").css("color", "#8f8f8f");
         $(".text-color").css("color", "#000");
         $(".navbar-brand h3").css("color", "#fff");
         $(".heading-1").css("color", "#fff");

@@ -18,6 +18,8 @@
             crossorigin="anonymous"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/14eafe471f.js" crossorigin="anonymous"></script>
+
+
     <title>Green Coding | Home</title>
 </head>
 
@@ -180,38 +182,29 @@
 
 
             <div class="team-member">
-                <p class="member-name">Alia</p>
+                <p>Alia</p>
                 <a href="https://www.linkedin.com/in/alia-erfan" target="_blank">
                     <i class="fa-brands fa-linkedin-in linkedin"></i>
                 </a>
-                <div style="padding-top: 10%;
-                     width: 160px;
-                     height: 160px;">
-                    <img src="./images/Alia.jpg" alt="Alia" style="width: 120px; height: 140px;">
-                </div>
+                <img src="./images/Alia.jpg" alt="Alia"
+                     style="height: 150px; margin-top: 10px; width:140px; margin-left:10px;margin-right:10px;">
             </div>
             <div class="team-member">
-                <p class="member-name">Izzet</p>
+                <p>Izzet</p>
                 <a href="https://www.linkedin.com/in/izzet-fatih-cetinkaya/" target="_blank">
                     <i class="fa-brands fa-linkedin-in linkedin"></i>
                 </a>
-                <div style="padding-top: 23%;
-    width: 160px;
-    height: 160px;">
-                    <img src="./images/Izzet.png" alt="Izzet" style="width: 130px; height: 120px;">
-                </div>
-
-
+                <img src="./images/Izzet.png" alt="Izzet" style="height: 130px; margin-top: 30px;">
             </div>
             <div class="team-member">
-                <p class="member-name">Marcel</p>
+                <p>Marcel</p>
                 <a href="https://www.linkedin.com/in/marcel-dietl-b70b48200/" target="_blank">
                     <i class="fa-brands fa-linkedin-in linkedin"></i>
                 </a>
                 <img src="./images/Marcel.png" alt="Marcel">
             </div>
             <div class="team-member">
-                <p class="member-name">Niklas</p>
+                <p>Niklas</p>
                 <a href="https://linkedin.com/in/niklasminth/" target="_blank">
                     <i class="fa-brands fa-linkedin-in linkedin"></i>
                 </a>
@@ -227,16 +220,19 @@
         <hr class="line">
         <p class="kontakt-beschreibung">Bavaria, Germany</p>
         <div class="contact-div">
-            <form method="post" action="https://getform.io/f/a85d3426-f3e2-46c7-bb4d-cb91feaf302e">
+            <form id="contact-form" >
                 <div class="contact-form">
                     <div class="contact-input">
-                        <input name="name" type="text" class="form-control" placeholder="Name">
+                        <input name="subject" type="text" id="subject" class="form-control" placeholder="Subject">
                     </div>
                     <div class="contact-input">
-                        <input name="email" type="email" class="form-control" placeholder="E-Mail">
+                        <input name="name" type="text" id="name" class="form-control" placeholder="Name">
                     </div>
                     <div class="contact-input">
-                            <textarea name="message" class="form-control" placeholder="Message"
+                        <input name="email" type="email" id="email" class="form-control" placeholder="E-Mail">
+                    </div>
+                    <div class="contact-input">
+                            <textarea name="message" id="message" class="form-control" placeholder="Message"
                                       required="required"></textarea>
                     </div>
                 </div>
@@ -262,6 +258,49 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./index.js"></script>
+
+<!-- Email JS -->
+<script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("iqZe7SxUE-YGI2GrS");
+    })();
+</script>
+<script>
+    document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const serviceID = "service_i52o6nq";
+            const templateID = "template_m7s278d";
+
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("SUCCESS!");
+                    document.getElementById('contact-form').reset();
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                    alert("FAILED...", error);
+                }
+            );
+        });
+</script>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
