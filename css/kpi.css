@@ -27,9 +27,12 @@
     padding: 0;
 }
 .fa-solid, .fas {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    /*color: #000;*/
+    /*font-size: 2rem;*/
+}
+.fa-angle-left , .fa-angle-right {
     color: #000;
-    font-size: 2rem;
 }
 .kpi2-item-box {
     border: 1px solid lightgrey;
