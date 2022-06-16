@@ -299,6 +299,9 @@ p {
 
 /* MOBILE VERSION */
 @media (max-width: 590px) {
+    .lead, .text-color{
+        font-size: 1rem;
+    }
 
     /* KPI */
     .kpi-item {

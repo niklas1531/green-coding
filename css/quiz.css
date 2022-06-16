@@ -83,6 +83,12 @@
 
 
 @media (max-width: 900px) {
+    .lead{
+        font-size: 1rem;
+    }
+    .carousel-part{
+        margin-top: 20%;
+    }
     #quiz-section {
         margin-top: 20%;
     }
@@ -91,6 +97,25 @@
     }
     .quiz-container h2 {
         font-size: 1.2rem;
+    }
+    .kpi2-item-box{
+        margin-bottom: 6%;
+        padding-top: 15%;
+        height: 300px;
+    }
+    .kpi2-item-box h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    #quizSort li:first-child {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    #quizSort li {
+        padding-bottom: 4%;
+    }
+    #quizSort li:last-child {
+        padding-bottom: 0;
     }
     .quiz ul li {
         font-size: 1rem;
