@@ -16,11 +16,7 @@ function checkAnswer() {
     if (JSON.stringify(correctAnswers) === JSON.stringify(answers)) {
         document.getElementById('quizSort-btn').textContent = "Correct :)";
         document.getElementById('quizSort-btn').style.backgroundColor = "green";
-
-
-        // alert("Correct :)");
     } else {
-        // alert("Try Again...");
         document.getElementById('quizSort-btn').textContent = "Try Again...";
         document.getElementById('quizSort-btn').style.backgroundColor = "red";
     }

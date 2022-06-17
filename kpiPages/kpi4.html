@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/kpi.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/14eafe471f.js" crossorigin="anonymous"></script>
+    <title>Green Coding | KPI</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="../index.html">
+
+            <img class="logo-image" src="../images/logo.svg" align="left">
+            <h3>Green Coding</h3>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars toggler"></i>
+        </button>
+
+        <!-- Hier ist die Navigationsleiste mit den Verlinkungen zu den verschiedenen Seiten -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../quizChallenge.html">QUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#kpis">KPIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#team">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <button id="dark-mode-btn" class=" nav-link dark-mode-btn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="beige-section kpi-content">
+        <div class="container-fluid">
+            <h1>Iteration vs Recursion</h1>
+            <hr class="line">
+            <p class="lead">
+                In this section you will learn the differences between recursion and iteration, especially with regard
+                to
+                green coding.
+            </p>
+            <h2>What is recursion and iteration? </h2>
+            <ul class="list-disc">
+                <li>Iteration and recursion are multiple executions of one or more instructions.</li>
+                <li>With recursion, your algorithm calls itself either directly or via other functions.</li>
+                <li>The iteration is realized by loops (for, while). The loop is terminated by a termination condition.
+                </li>
+                <li>Any recursion can also be converted into an iterative solution and vice versa.</li>
+            </ul>
+            <h2>What do recursion and iteration have to do with green code?</h2>
+            <ul class="list-disc">
+                <li>In programming, a decision must be made depending on the application as to whether iteration or
+                    recursion
+                    is used.</li>
+                <li>If this decision is made incorrectly, it can lead to serious disadvantages in energy consumption,
+                    runtime
+                    and thus the energy efficiency of your program.</li>
+            </ul>
+
+            <p>In the following you will see how a faculty can be calculated with both iteration and recursion:</p>
+            <div class="it-rec-images">
+                <img src="../images/iteration-example.png" alt="iteration-example">
+                <img src="../images/recursion-example.png" alt="recursion-example">
+            </div>
+            <span>
+                In this case, the loop is not only easier to read, but also more memory-efficient and also much better
+                in
+                runtime behavior.
+                Another example is the comparison between the recursive and iterative versions of the program "The
+                Towers of
+                Hanoi".
+            </span>
+            <p>How does the game operate in general?</p>
+            <span>
+                The game consists of three sticks of the same size, A, B and C, on which several punched discs are
+                placed,
+                all different sizes. At the beginning, all the discs are on stick A, ordered by size, with the largest
+                disc
+                at the bottom and the smallest at the top. The aim of the game is to move the complete stack of discs
+                from A
+                to C.
+                In this comparison, the power consumption and execution time were measured. The measurements were taken
+                at
+                an interval of 200 ms or 5 Hz, and the programme Towers of Hanoi with 30 hard disks was run.
+                The recursive algorithm implemented in C++ consumed an average of 322.23 joules, while its iterative
+                version
+                consumed 1656.26 joules, an increase of more than 400 %.
+
+                It turns out that it is not possible to say in principle whether recursion or iteration is more
+                efficient in
+                terms of energy consumption. The decision always depends on the situation.
+            </span>
+        </div>
+    </section>
+    <section id="quiz-section" class=" grey-section quiz-section">
+        <div class="container-fluid">
+            <h1 class="black-text-color"> Test yourself!</h1>
+            <hr class="line">
+            <section class="quiz row">
+                <div class="col-lg-4">
+                    <div class="quiz-container box-shadow" id="quiz">
+                        <div class="quiz-header">
+                            <h2 class="question black-text-color" id="question">Question Text</h2>
+                            <p class="grey-text-color" id="whichQuestion">#Question in quiz</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="answer" id="a" class="answer"/>
+                                    <label for="a" id="a_text">Answer</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="answer" id="b" class="answer"/>
+                                    <label for="b" id="b_text">Answer</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="answer" id="c" class="answer"/>
+                                    <label for="c" id="c_text">Answer</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="answer" id="d" class="answer"/>
+                                    <label for="d" id="d_text">Answer</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quiz-container box-shadow">
+                        <div class="quiz-header">
+                            <h2 class="question black-text-color">In General: Which data structure is the most efficient?</h2>
+                            <p class="grey-text-color">(Sort the list. Top=most efficient)</p>
+                            <ul id="quizSort">
+                                <li>ArrayList</li>
+                                <li>LinkedList</li>
+                                <li>Stack</li>
+                                <li>Vector</li>
+                                <li>RoleList</li>
+                            </ul>
+                        </div>
+                        <button id="quizSort-btn" onclick="checkAnswer()">Check Answer</button>
+                    </div>
+                </div>
+                <div class=" col-lg-4">
+                    <div class="quiz-container box-shadow">
+                        <div class="quiz-header"></div>
+                        <button></button>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="page-footer">
+                <a class="footer-link" href="../index.html">HOME</a>
+                <a class="footer-link" href="../index.html#about">ABOUT</a>
+                <a class="footer-link" href="../index.html#kpis">KPIS</a>
+                <a class="footer-link" href="../index.html#team">TEAM</a>
+                <a class="footer-link" href="../index.html#contact">CONTACT</a>
+            </div>
+            <p class="footer-copyright">Copyright © 2022 All rights reserved - Green Coding</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="../index.js"></script>
+    <script src="../js/quiz1.js"></script>
+    <script src="../js/quiz2.js"></script>
+</body>
+
+</html>

@@ -3,6 +3,7 @@ html,
 body {
     background-color: #000;
     height: 100%;
+
 }
 
 section {
@@ -22,10 +23,12 @@ footer {
 .box-shadow {
     box-shadow: 10px 20px 15px silver;
 }
+
 /*Textfarbe Schwarz*/
 .back-text-color {
     color: #000;
 }
+
 /*Textfarbe grau*/
 .grey-text-color, .grey-text-color-fix {
     color: #8f8f8f;
@@ -156,6 +159,7 @@ footer {
     padding-right: 3%;
     align-items: center;
 }
+
 .text-part3 {
     display: flex;
     text-align: center;
@@ -165,6 +169,7 @@ footer {
     padding-left: 3%;
     padding-right: 3%;
 }
+
 .text-part2 {
     display: flex;
     text-align: center;
@@ -174,14 +179,17 @@ footer {
     padding-left: 3%;
     padding-right: 3%;
 }
+
 .text-part2 div {
     align-items: center;
     padding: 1%;
 }
+
 .about-emoji img {
     width: 110px;
     height: auto;
 }
+
 /* KPIS */
 .kpi-item {
     border: 1px solid transparent;
@@ -300,10 +308,18 @@ footer {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
+@media (max-width: 850px) {
+    .team-div {
+        display: block;
+    }
+    .team-member {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* MOBILE VERSION */
 @media (max-width: 590px) {
-    .lead, .text-color{
+    .lead, .text-color {
         font-size: 1rem;
     }
 

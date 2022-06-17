@@ -155,8 +155,8 @@
                 <img class="kpi-image" src="./images/kpi2.jpg" alt="kpi2">
                 <h3 class="black-text-color">Data Structures</h3>
                 <div class="kpi-btns">
-                    <a href="kpis/kpi2.html" class="kpi-link">Learn more</a>
-                    <a class="kpi-link" href="./kpis/kpi2.html#quiz-section">Start Quiz</a>
+                    <a href="kpiPages/kpi2.html" class="kpi-link">Learn more</a>
+                    <a class="kpi-link" href="./kpiPages/kpi2.html#quiz-section">Start Quiz</a>
                 </div>
             </div>
 
@@ -164,7 +164,7 @@
                 <img class="kpi-image" src="./images/kpi3.jpg" alt="kpi3">
                 <h3 class="black-text-color">Iteration vs. Recursion</h3>
                 <div class="kpi-btns">
-                    <a href="kpis/kpi4.html" class="kpi-link">Learn more</a>
+                    <a href="kpiPages/kpi4.html" class="kpi-link">Learn more</a>
                     <a class="kpi-link" href="#">Start Quiz</a>
                 </div>
             </div>
@@ -269,37 +269,7 @@
         emailjs.init("iqZe7SxUE-YGI2GrS");
     })();
 </script>
-<script>
-    document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const serviceID = "service_i52o6nq";
-            const templateID = "template_m7s278d";
-
-            // send the email here
-            emailjs.sendForm(serviceID, templateID, this).then(
-                (response) => {
-                    console.log("SUCCESS!", response.status, response.text);
-                    alert("SUCCESS!");
-                    document.getElementById('contact-form').reset();
-                },
-                (error) => {
-                    console.log("FAILED...", error);
-                    alert("FAILED...", error);
-                }
-            );
-        });
-</script>
-
-
-
-
-
-
-
-
+<script src="./js/email.js"></script>
 
 </body>
 

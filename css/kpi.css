@@ -27,9 +27,6 @@
     padding: 0;
 }
 
-.fa-angle-left , .fa-angle-right {
-    color: #000;
-}
 .kpi2-item-box {
     border: 1px solid lightgrey;
     border-radius: 0.5rem;
@@ -51,7 +48,7 @@
 
 @media (max-width: 900px) {
     .kpi-content {
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     /* KPI ITERATION VS RECURSION */
