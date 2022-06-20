@@ -30,7 +30,7 @@ footer {
 }
 
 /*Textfarbe grau*/
-.grey-text-color, .grey-text-color-fix {
+.grey-text-color, .grey-text-color-fix, summary {
     color: #8f8f8f;
 }
 
@@ -159,7 +159,9 @@ footer {
     padding-right: 3%;
     align-items: center;
 }
-
+.about-mobile {
+    display: none;
+}
 .text-part3 {
     display: flex;
     text-align: center;
@@ -337,4 +339,11 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+    .about-desktop {
+        display: none;
+    }
+    .about-mobile {
+        display: block;
+    }
+
 }
