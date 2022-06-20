@@ -57,9 +57,11 @@
     font-size: 1.3rem;
 }
 
+
 .quiz ul {
     list-style-type: none;
     text-align: left;
+
 
 }
 
@@ -70,6 +72,8 @@
 .quiz ul li {
     font-size: 1.2rem;
     padding: 1% 0;
+
+
 }
 .quiz ul li label {
     cursor: pointer;
