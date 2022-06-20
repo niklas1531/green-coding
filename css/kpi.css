@@ -1,6 +1,9 @@
-.kpi-content {
+.kpi-welcome{
     text-align: center;
     margin-top: 5%;
+}
+.kpi-content{
+    text-align: center;
 }
 
 .list-disc {
@@ -47,7 +50,7 @@
 }
 
 @media (max-width: 900px) {
-    .kpi-content {
+    .kpi-welcome {
         margin-top: 15%;
     }
 

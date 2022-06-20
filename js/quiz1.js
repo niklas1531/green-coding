@@ -93,7 +93,7 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             quiz.innerHTML = `
-            <div style="position: relative; transform: translateY(-50%); top: 50%;">
+            <div class="black-text-color" style="position: relative; transform: translateY(-50%); top: 50%;">
                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
     
                <button onclick="location.reload()">Reload</button>

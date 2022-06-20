@@ -1,8 +1,9 @@
 var answers = {
-    "q1": ["organizing", "processing", "retriving", "storing"],
-    "q2": ["joule"],
-    "q3": ["30"],
-    "q4": ["saturday"]
+    "q1": ["arraylist"],
+    "q2": ["linkedhashset"],
+    "q3": ["linkedhashset"],
+    "q4": ["hashtable"],
+    "q5": ["hashtable"]
 };
 
 function markAnswers() {

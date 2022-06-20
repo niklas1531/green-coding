@@ -23,11 +23,13 @@ function setLightTheme(){
     $(".box-shadow").css("box-shadow", "10px 20px 15px silver");
     $(".quizSort-li").css("border", "1px solid #000");
     $(".quiz-container").css("backgroundColor", "#fff");
+    $(".quiz-container-lg").css("backgroundColor", "#fff");
     $(".progress").css("backgroundColor", "#000");
     $("li").css("color", "#000");
     $(".member-name").css("color", "#8f8f8f");
     $(".black-text-color").css("color", "#000");
     $(".grey-text-color").css("color", "#8f8f8f");
+    $("summary").css("color", "#8f8f8f");
     $(".navbar-brand h3").css("color", "#fff");
     $(".heading-1").css("color", "#fff");
     localStorage.setItem("theme", "light");
@@ -35,7 +37,9 @@ function setLightTheme(){
 function setDarkTheme(){
     $(".grey-section").css("backgroundColor", "#474747");
     $(".beige-section").css("backgroundColor", "#403f3d");
+    $("summary").css("color", "#fff");
     $(".quiz-container").css("backgroundColor", "#474747");
+    $(".quiz-container-lg").css("backgroundColor", "#474747");
     $(".box-shadow").css("box-shadow", "10px 20px 15px #000");
     $(".black-text-color").css("color", "#fff");
     $(".grey-text-color").css("color", "#fff");
