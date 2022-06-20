@@ -73,7 +73,7 @@ footer {
 
 .navbar-brand h3,
 .nav-link,
-.footer-link {
+.footer-link , .fa-brightness{
     color: #fff;
 }
 
@@ -199,7 +199,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
-    /* background-color: #fff; */
 }
 
 .kpi-item h3 {

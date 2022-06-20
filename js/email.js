@@ -1,3 +1,6 @@
+
+
+
 document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
@@ -10,7 +13,8 @@ document
         emailjs.sendForm(serviceID, templateID, this).then(
             (response) => {
                 console.log("SUCCESS!", response.status, response.text);
-                alert("SUCCESS!");
+                // alert("SUCCESS!");
+                $("#alert").css("display", "block");
                 document.getElementById('contact-form').reset();
             },
             (error) => {
