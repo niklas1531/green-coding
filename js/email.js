@@ -9,11 +9,9 @@ document
         const serviceID = "service_i52o6nq";
         const templateID = "template_m7s278d";
 
-        // send the email here
         emailjs.sendForm(serviceID, templateID, this).then(
             (response) => {
                 console.log("SUCCESS!", response.status, response.text);
-                // alert("SUCCESS!");
                 $("#alert").css("display", "block");
                 document.getElementById('contact-form').reset();
             },

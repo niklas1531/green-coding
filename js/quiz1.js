@@ -35,7 +35,7 @@ const quizData = [
 
 ];
 
-const quiz = document.getElementById('quiz')
+const quiz = document.getElementById('quiz1')
 const answerEls = document.querySelectorAll('.answer')
 const questionNumber = document.getElementById('whichQuestion')
 const questionEl = document.getElementById('question')
