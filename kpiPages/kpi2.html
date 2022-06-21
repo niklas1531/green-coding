@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/kpi.css">
     <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/table.css">
     <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -73,8 +74,13 @@
         <hr class="line">
         <p class="lead grey-text-color">
             Great that you are here and want to learn more about green code's key performance indicators (KPIs)!
-            This KPI deals with is energy consumption. Energy consumption refers to the energy (measured in Joules) a
-            code, program, or software consumes at runtime at the CPU level. Let's get started!
+            <br>
+            This KPI deals with is energy efficiency. Energy efficiency is often measured by the energy a code, program,
+            or software consumes at runtime on the CPU level (in Joules).
+            <br>
+            You want to learn more about different ways of improving the energy efficiency of your code in just a few
+            steps? Let's get started!
+
         </p>
     </div>
 </section>
@@ -83,7 +89,7 @@
         <i class="fa-solid fa-sitemap black-text-color"></i>
         <h2 class="black-text-color">Data Structures</h2>
         <hr class="line">
-        <div class="container-fluid kpi2-item-box box-shadow">
+        <div class="container-fluid kpi2-item-box box-shadow" id="kpi1-ds-1">
             <div style="width: 100%">
                 <h2 class="black-text-color">What is a data structure?</h2>
                 <div class="carousel-part">
@@ -145,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid kpi2-item-box box-shadow">
+        <div class="container-fluid kpi2-item-box box-shadow" id="kpi1-ds-2">
             <div style="width: 100%">
                 <h2 class="black-text-color">What do data structures have to do with green code?</h2>
                 <div class="carousel-part">
@@ -156,19 +162,18 @@
                         <div id="carousel2" class="carousel slide" data-ride="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active ">
-
+                                    <p class="black-text-color">
+                                        A poor choice of the data structure in terms that it is not suitable for the
+                                        data, the operations you want to perform on the data, and the program can cause
+                                        severe drawbacks in the energy consumption, and thus the energy
+                                        efficiency of your program
+                                    </p>
                                 </div>
                                 <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item ">
-
+                                    <p class="black-text-color">
+                                        A study from Pereira and colleagues in 2016 showed that an appropriate choice
+                                        of the data structure can improve the energy consumption by up to 11%
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -179,31 +184,41 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid kpi2-item-box box-shadow">
+        <div class="container-fluid kpi2-item-box box-shadow" id="kpi1-ds-3">
             <div style="width: 100%">
-                <h2 class="black-text-color">How do you measure the quality of a data structure with regards to green
-                    code?</h2>
+                <h2 class="black-text-color">How can I measure the quality of a data structure with regards to energy
+                    efficiency?</h2>
                 <div class="carousel-part">
                     <a class="" type="button" href="#carousel3" data-slide="prev">
                         <i class="fa-solid fa-angle-left black-text-color"></i>
                     </a>
                     <div>
-                        <div id="carousel3" class="carousel slide" data-ride="false">
+                        <div id="carousel3" class="carousel slide" data-ride="false" data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active ">
-
+                                    <p class="black-text-color">
+                                        As there are many different programming languages and data structures, an
+                                        assessment must always be made on a case-by-case basis
+                                    </p>
                                 </div>
                                 <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item">
-
-                                </div>
-                                <div class="carousel-item ">
-
+                                    <p class="black-text-color">
+                                        Nevertheless, there are two ways of easily assessing the energy consumption of
+                                        your data structures when using the Java Collection Framework
+                                    <ul>
+                                        <li>
+                                            <a href="#energy-consumption-tables">Click here</a> to see energy consumption tables of Maps, Sets, and Lists
+                                            (when
+                                            storing String data with a size of 25k) as well as their respective
+                                            operations to help you choose a suitable way of storing your data
+                                        </li>
+                                        <li>
+                                            <a href="https://dzone.com/articles/java-collection-performance" target="_blank">Click here</a> to learn more about Java Collection Performance, a framework
+                                            that provides code (i.e., an interface) for testing the performance of other
+                                            data structures on your own
+                                        </li>
+                                    </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -212,6 +227,312 @@
                         <i class="fa-solid fa-angle-right black-text-color"></i>
                     </a>
                 </div>
+            </div>
+        </div>
+        <h3 class="black-text-color" id="energy-consumption-tables">Energy consumption tables</h3>
+        <p class="grey-text-color">(Press the buttons to hide or show columns)</p>
+        <hr class="line">
+        <div class=" container-fluid row" style="margin-top: 3%">
+            <div class=" col-lg-6">
+                <div class="table-buttons">
+                    <button class="table-btn" id="arraylist-btn">ArrayList</button>
+                    <button class="table-btn" id="attributelist-btn">AttributeList</button>
+                    <button class="table-btn" id="linkedlist-btn">LinkedList</button>
+                    <button class="table-btn" id="stack-btn">Stack</button>
+                    <button class="table-btn" id="vector-btn">Vector</button>
+                </div>
+                <table class="tg">
+                    <colgroup>
+                        <col id="header-vertical">
+                        <col id="arraylist">
+                        <col id="attributelist">
+                        <col id="linkedlist">
+                        <col id="stack">
+                        <col id="vector">
+                    </colgroup>
+                    <thead>
+                    <tr class="header-mobile">
+                        <th class="tg-j6zm"></th>
+                        <th class="tg-j6zm">Array<br>List</th>
+                        <th class="tg-j6zm">Attribute<br>List</th>
+                        <th class="tg-j6zm">Linked<br>List</th>
+                        <th class="tg-j6zm">Stack</th>
+                        <th class="tg-j6zm">Vector</th>
+                    </tr>
+                    <tr class="header-desktop">
+                        <th class="tg-j6zm"></th>
+                        <th class="tg-j6zm">ArrayList</th>
+                        <th class="tg-j6zm">AttributeList</th>
+                        <th class="tg-j6zm">LinkedList</th>
+                        <th class="tg-j6zm">Stack</th>
+                        <th class="tg-j6zm">Vector</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="tg-j6zm">Methods</th>
+                        <th class="tg-j6zm">Joule</th>
+                        <th class="tg-j6zm">Joule</th>
+                        <th class="tg-j6zm">Joule</th>
+                        <th class="tg-j6zm">Joule</th>
+                        <th class="tg-j6zm">Joule</th>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">add</th>
+                        <td class="tg-rlbz">0,9773</td>
+                        <td class="tg-v8wt">1.1510</td>
+                        <td class="tg-075i">1.8016</td>
+                        <td class="tg-lcw7">1.5659</td>
+                        <td class="tg-mukt">1.5177</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">addAll</th>
+                        <td class="tg-mukt">1.3353</td>
+                        <td class="tg-rlbz">1.0492</td>
+                        <td class="tg-rlbz">1.1043</td>
+                        <td class="tg-v8wt">1.1015</td>
+                        <td class="tg-dzo9">1.7903</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">addAlli</th>
+                        <td class="tg-dc3p">1.7855</td>
+                        <td class="tg-mukt">1.6035</td>
+                        <td class="tg-39dj">1.7272</td>
+                        <td class="tg-v8wt">1.2962</td>
+                        <td class="tg-h4gw">1.6268</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">addl</th>
+                        <td class="tg-dc3p">1,7125</td>
+                        <td class="tg-ry5z">1.3849</td>
+                        <td class="tg-39dj">1.6404</td>
+                        <td class="tg-lcw7">1.5287</td>
+                        <td class="tg-mukt">1.4554</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">clear</th>
+                        <td class="tg-rlbz">1.1284</td>
+                        <td class="tg-v8wt">1.2409</td>
+                        <td class="tg-39dj">1.6497</td>
+                        <td class="tg-39dj">1.6199</td>
+                        <td class="tg-rlbz">1.0574</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">contains</th>
+                        <td class="tg-39dj">2.7568</td>
+                        <td class="tg-mukt">2.4228</td>
+                        <td class="tg-075i">3.1552</td>
+                        <td class="tg-rlbz">2.0128</td>
+                        <td class="tg-v8wt">2.1558</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">containsAll</th>
+                        <td class="tg-bvjv">1.5993</td>
+                        <td class="tg-x91g">1.8053</td>
+                        <td class="tg-075i">2.2887</td>
+                        <td class="tg-rlbz">1.2054</td>
+                        <td class="tg-mukt">1.5091</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">get</th>
+                        <td class="tg-39dj">2.2029</td>
+                        <td class="tg-rlbz">1.1171</td>
+                        <td class="tg-x91g">2.0168</td>
+                        <td class="tg-h4gw">1.8956</td>
+                        <td class="tg-ry5z">1.4978</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">indexOf</th>
+                        <td class="tg-ry5z">1.4447</td>
+                        <td class="tg-x91g">2.0325</td>
+                        <td class="tg-075i">2.6289</td>
+                        <td class="tg-bvjv">1.8090</td>
+                        <td class="tg-h4gw">2.0788</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">iterateAll</th>
+                        <td class="tg-39dj">2.0701</td>
+                        <td class="tg-rlbz">1.0473</td>
+                        <td class="tg-075i">2.6401</td>
+                        <td class="tg-bvjv">1.6036</td>
+                        <td class="tg-v8wt">1.1336</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">iterator</th>
+                        <td class="tg-j8j9">1.4893</td>
+                        <td class="tg-rlbz">1.1589</td>
+                        <td class="tg-bvjv">1.7666</td>
+                        <td class="tg-bbs6">2.1895</td>
+                        <td class="tg-bvjv">1.6505</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">lastIndexOf</th>
+                        <td class="tg-2rmf">1.7750</td>
+                        <td class="tg-mukt">1.7666</td>
+                        <td class="tg-075i">2.5019</td>
+                        <td class="tg-rlbz">1.2260</td>
+                        <td class="tg-ugrm">1.2296</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">listIterator</th>
+                        <td class="tg-j8j9">1.4457</td>
+                        <td class="tg-h4gw">1.6190</td>
+                        <td class="tg-075i">2.5003</td>
+                        <td class="tg-bvjv">1.6354</td>
+                        <td class="tg-ugrm">1.2746</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">listIteratori</th>
+                        <td class="tg-2rmf">1.7356</td>
+                        <td class="tg-rlbz">1.5552</td>
+                        <td class="tg-075i">2.1996</td>
+                        <td class="tg-h4gw">1.8799</td>
+                        <td class="tg-x91g">1.7545</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">remove</th>
+                        <td class="tg-rlbz">1.1308</td>
+                        <td class="tg-mukt">1.4480</td>
+                        <td class="tg-lcw7">1.6924</td>
+                        <td class="tg-v8wt">1.2663</td>
+                        <td class="tg-x91g">1.4973</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">removeAll</th>
+                        <td class="tg-dzo9">8.0905</td>
+                        <td class="tg-h4gw">7.8108</td>
+                        <td class="tg-075i">8.3150</td>
+                        <td class="tg-v8wt">7.3824</td>
+                        <td class="tg-ugrm">7.1281</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">removei</th>
+                        <td class="tg-39dj">1.9135</td>
+                        <td class="tg-rlbz">1.3534</td>
+                        <td class="tg-mukt">1.7174</td>
+                        <td class="tg-ry5z">1.5850</td>
+                        <td class="tg-v8wt">1.5486</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">reatinAll</th>
+                        <td class="tg-mukt">2.0737</td>
+                        <td class="tg-bvjv">2.7845</td>
+                        <td class="tg-v8wt">2.5982</td>
+                        <td class="tg-mukt">2.7635</td>
+                        <td class="tg-075i">3.4019</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">set</th>
+                        <td class="tg-rlbz">0,9476</td>
+                        <td class="tg-h4gw">1.5943</td>
+                        <td class="tg-075i">2.0474</td>
+                        <td class="tg-mukt">1.4938</td>
+                        <td class="tg-mukt">1.4957</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">sublist</th>
+                        <td class="tg-v8wt">1,1308</td>
+                        <td class="tg-x91g">1.6021</td>
+                        <td class="tg-075i">1.8457</td>
+                        <td class="tg-dzo9">1.7082</td>
+                        <td class="tg-ugrm">0,9414</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-7zrl">toArray</th>
+                        <td class="tg-mukt">1.6418</td>
+                        <td class="tg-ugrm">1.5024</td>
+                        <td class="tg-x91g">1.6739</td>
+                        <td class="tg-ry5z">1.5694</td>
+                        <td class="tg-075i">2.0213</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <table class="tg" style="display: none">
+                    <thead>
+                    <tr>
+                        <th class="tg-fymr"></th>
+                        <th class="tg-fymr">HashSet</th>
+                        <th class="tg-fymr">Link HashSet</th>
+                        <th class="tg-fymr">TreeSet</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="tg-fymr">Methods</th>
+                        <th class="tg-fymr">Joules</th>
+                        <th class="tg-fymr">Joules</th>
+                        <th class="tg-fymr">Joules</th>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">add</th>
+                        <td class="tg-hzcp">1.7749</td>
+                        <td class="tg-6zgs">1.4917</td>
+                        <td class="tg-is4z">1.4817</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">addAll</th>
+                        <td class="tg-6zgs">1.4771</td>
+                        <td class="tg-hzcp">1.9335</td>
+                        <td class="tg-hqz3">1.5101</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">clear</th>
+                        <td class="tg-is4z">1.0586</td>
+                        <td class="tg-hqz3">1.3288</td>
+                        <td class="tg-hzcp">1.8566</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">contains</th>
+                        <td class="tg-hzcp">2.0685</td>
+                        <td class="tg-is4z">1.0401</td>
+                        <td class="tg-hzcp">2.0446</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">containsAll</th>
+                        <td class="tg-is4z">1.4000</td>
+                        <td class="tg-hzcp">2.1748</td>
+                        <td class="tg-tj0w">1.4443</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">iterateAll</th>
+                        <td class="tg-ybuk">1.4554</td>
+                        <td class="tg-is4z">1.2907</td>
+                        <td class="tg-hqz3">1.3844</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">iterator</th>
+                        <td class="tg-hzcp">1.7596</td>
+                        <td class="tg-is4z">0,9613</td>
+                        <td class="tg-btii">1.7239</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">remove</th>
+                        <td class="tg-ybuk">1.2633</td>
+                        <td class="tg-ybuk">1.2458</td>
+                        <td class="tg-is4z">1.0700</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">removeAll</th>
+                        <td class="tg-hzcp">2.1359</td>
+                        <td class="tg-hqz3">1.9145</td>
+                        <td class="tg-is4z">1.3920</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">retainAll</th>
+                        <td class="tg-6zgs">2.4092</td>
+                        <td class="tg-is4z">2.2512</td>
+                        <td class="tg-hzcp">3.2222</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-0pky">toArray</th>
+                        <td class="tg-is4z">1.3833</td>
+                        <td class="tg-is4z">1.3776</td>
+                        <td class="tg-hzcp">1.6292</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -327,7 +648,8 @@
             <div class="col-lg-6">
                 <div class="quiz-container-lg box-shadow" id="quiz2">
                     <div class="quiz-header">
-                        <h2 class="question black-text-color">Which of these is more efficient with regard to the Hanoi example?</h2>
+                        <h2 class="question black-text-color">Which of these is more efficient with regard to the Hanoi
+                            example?</h2>
                         <div>
                             <img id="quiz2-img1" src="../images/recursion-example.png">
                             <img id="quiz2-img2" src="../images/iteration-example.png">
@@ -360,6 +682,7 @@
 <script src="../js/quiz1.1.js"></script>
 <script src="../js/quiz2.js"></script>
 <script src="../js/quiz3.js"></script>
+<script src="../js/table.js"></script>
 
 </body>
 

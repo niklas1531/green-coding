@@ -9,7 +9,9 @@
 .list-disc {
     text-align: left;
 }
-
+.row {
+    margin: 0;
+}
 .carousel-part {
     margin-top: 3%;
     margin-bottom: 5%;
@@ -24,23 +26,27 @@
     height: 100px;
     align-items: center;
     padding: 3% 2%;
-
 }
 .carousel-inner {
     padding: 0;
 }
-
+#kpi1-ds-3 {
+    height: 500px;
+}
+#kpi1-ds-3 .carousel-item {
+    height: 250px;
+}
 .kpi2-item-box {
     border: 1px solid lightgrey;
     border-radius: 0.5rem;
     height: 350px;
     width: 80%;
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
     margin-right: auto;
     margin-bottom: 3%;
+    align-items: center;
 }
 /* KPI ITERATION VS RECURSION */
 .it-rec-images {

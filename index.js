@@ -24,6 +24,8 @@ function setLightTheme(){
     $(".quizSort-li").css("border", "1px solid #000");
     $(".quiz-container").css("backgroundColor", "#fff");
     $(".quiz-container-lg").css("backgroundColor", "#fff");
+    $(".tg").css("backgroundColor", "rgb(245,245,245)");
+    $(".tg th").css("color", "#000");
     $(".progress").css("backgroundColor", "#000");
     $("li").css("color", "#000");
     $(".member-name").css("color", "#8f8f8f");
@@ -42,6 +44,8 @@ function setDarkTheme(){
     $(".quiz-container-lg").css("backgroundColor", "#474747");
     $(".box-shadow").css("box-shadow", "10px 20px 15px #000");
     $(".black-text-color").css("color", "#fff");
+    $(".tg").css("backgroundColor", "#474747");
+    $(".tg th").css("color", "#fff");
     $(".grey-text-color").css("color", "#fff");
     $(".progress").css("backgroundColor", "#fff");
     $("li").css("color", "#fff");
