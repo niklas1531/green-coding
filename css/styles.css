@@ -38,7 +38,10 @@ footer {
     border-color: #2eb872;
     border-width: 3px;
 }
-
+.container-table {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .container-fluid {
     padding-left: 5%;
     padding-right: 5%;

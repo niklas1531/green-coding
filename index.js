@@ -28,6 +28,9 @@ function setLightTheme(){
     $(".tg th").css("color", "#000");
     $(".progress").css("backgroundColor", "#000");
     $("li").css("color", "#000");
+    $(".tg-fymr").css("color", "#000");
+    $(".tg-j6zm").css("color", "#000");
+    $(".tg-0thz").css("color", "#000");
     $(".member-name").css("color", "#8f8f8f");
     $(".black-text-color").css("color", "#000");
     $(".grey-text-color").css("color", "#8f8f8f");
@@ -46,6 +49,9 @@ function setDarkTheme(){
     $(".black-text-color").css("color", "#fff");
     $(".tg").css("backgroundColor", "#474747");
     $(".tg th").css("color", "#fff");
+    $(".tg-fymr").css("color", "#fff");
+    $(".tg-j6zm").css("color", "#fff");
+    $(".tg-0thz").css("color", "#fff");
     $(".grey-text-color").css("color", "#fff");
     $(".progress").css("backgroundColor", "#fff");
     $("li").css("color", "#fff");

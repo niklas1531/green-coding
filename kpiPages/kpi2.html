@@ -207,13 +207,16 @@
                                         your data structures when using the Java Collection Framework
                                     <ul>
                                         <li>
-                                            <a href="#energy-consumption-tables">Click here</a> to see energy consumption tables of Maps, Sets, and Lists
+                                            <a href="#energy-consumption-tables">Click here</a> to see energy
+                                            consumption tables of Maps, Sets, and Lists
                                             (when
                                             storing String data with a size of 25k) as well as their respective
                                             operations to help you choose a suitable way of storing your data
                                         </li>
                                         <li>
-                                            <a href="https://dzone.com/articles/java-collection-performance" target="_blank">Click here</a> to learn more about Java Collection Performance, a framework
+                                            <a href="https://dzone.com/articles/java-collection-performance"
+                                               target="_blank">Click here</a> to learn more about Java Collection
+                                            Performance, a framework
                                             that provides code (i.e., an interface) for testing the performance of other
                                             data structures on your own
                                         </li>
@@ -232,18 +235,21 @@
         <h3 class="black-text-color" id="energy-consumption-tables">Energy consumption tables</h3>
         <p class="grey-text-color">(Press the buttons to hide or show columns)</p>
         <hr class="line">
-        <div class=" container-fluid row" style="margin-top: 3%">
-            <div class=" col-lg-6">
+        <div class="container-table" style="margin-top: 3%">
+            <details style=" margin-bottom: 3%">
+                <summary>
+                    Lists
+                </summary>
                 <div class="table-buttons">
-                    <button class="table-btn" id="arraylist-btn">ArrayList</button>
-                    <button class="table-btn" id="attributelist-btn">AttributeList</button>
-                    <button class="table-btn" id="linkedlist-btn">LinkedList</button>
-                    <button class="table-btn" id="stack-btn">Stack</button>
-                    <button class="table-btn" id="vector-btn">Vector</button>
+                    <button class="table-btn" id="table1-col1-btn">ArrayList</button>
+                    <button class="table-btn" id="table1-col2-btn">AttributeList</button>
+                    <button class="table-btn" id="table1-col3-btn">LinkedList</button>
+                    <button class="table-btn" id="table1-col4-btn">Stack</button>
+                    <button class="table-btn" id="table1-col5-btn">Vector</button>
                 </div>
-                <table class="tg">
+                <table id="table1" class="tg">
                     <colgroup>
-                        <col id="header-vertical">
+                        <col id="header-vertical" style="width: 20%">
                         <col id="arraylist">
                         <col id="attributelist">
                         <col id="linkedlist">
@@ -251,16 +257,8 @@
                         <col id="vector">
                     </colgroup>
                     <thead>
-                    <tr class="header-mobile">
-                        <th class="tg-j6zm"></th>
-                        <th class="tg-j6zm">Array<br>List</th>
-                        <th class="tg-j6zm">Attribute<br>List</th>
-                        <th class="tg-j6zm">Linked<br>List</th>
-                        <th class="tg-j6zm">Stack</th>
-                        <th class="tg-j6zm">Vector</th>
-                    </tr>
                     <tr class="header-desktop">
-                        <th class="tg-j6zm"></th>
+                        <th class="tg-j6zm">Methods / DataStructure</th>
                         <th class="tg-j6zm">ArrayList</th>
                         <th class="tg-j6zm">AttributeList</th>
                         <th class="tg-j6zm">LinkedList</th>
@@ -270,12 +268,12 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th class="tg-j6zm">Methods</th>
-                        <th class="tg-j6zm">Joule</th>
-                        <th class="tg-j6zm">Joule</th>
-                        <th class="tg-j6zm">Joule</th>
-                        <th class="tg-j6zm">Joule</th>
-                        <th class="tg-j6zm">Joule</th>
+                        <th class="tg-fymr"><input id="table1-filterInput" type="text" placeholder="search method"></th>
+                        <td class="tg-j6zm">Joule</td>
+                        <td class="tg-j6zm">Joule</td>
+                        <td class="tg-j6zm">Joule</td>
+                        <td class="tg-j6zm">Joule</td>
+                        <td class="tg-j6zm">Joule</td>
                     </tr>
                     <tr>
                         <th class="tg-7zrl">add</th>
@@ -447,12 +445,24 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="col-lg-6">
-                <table class="tg" style="display: none">
+            </details>
+            <details style=" margin-bottom: 3%">
+                <summary>Sets</summary>
+                <div class="table-buttons">
+                    <button class="table-btn" id="table2-col1-btn">HashSet</button>
+                    <button class="table-btn" id="table2-col2-btn">Link HashSet</button>
+                    <button class="table-btn" id="table2-col3-btn">TreeSet</button>
+                </div>
+                <table id="table2" class="tg">
+                    <colgroup>
+                        <col id="header-vertical2" style="width: 20%">
+                        <col id="hashset">
+                        <col id="linkhashset">
+                        <col id="treeset">
+                    </colgroup>
                     <thead>
                     <tr>
-                        <th class="tg-fymr"></th>
+                        <th class="tg-fymr">Methods / DataStructures</th>
                         <th class="tg-fymr">HashSet</th>
                         <th class="tg-fymr">Link HashSet</th>
                         <th class="tg-fymr">TreeSet</th>
@@ -460,10 +470,10 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th class="tg-fymr">Methods</th>
-                        <th class="tg-fymr">Joules</th>
-                        <th class="tg-fymr">Joules</th>
-                        <th class="tg-fymr">Joules</th>
+                        <th class="tg-fymr"><input id="table2-filterInput" type="text" placeholder="search method"></th>
+                        <td class="tg-fymr">Joule</td>
+                        <td class="tg-fymr">Joule</td>
+                        <td class="tg-fymr">Joule</td>
                     </tr>
                     <tr>
                         <th class="tg-0pky">add</th>
@@ -533,7 +543,124 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
+            </details>
+            <details style=" margin-bottom: 3%">
+                <summary>Maps</summary>
+                <div class="table-buttons">
+                    <button class="table-btn" id="table3-col1-btn">Hashmap</button>
+                    <button class="table-btn" id="table3-col2-btn">HashTable</button>
+                    <button class="table-btn" id="table3-col3-btn">LinkedHashMap</button>
+                    <button class="table-btn" id="table3-col4-btn">TreeMap</button>
+                </div>
+                <table id="table3" class="tg">
+                    <colgroup>
+                        <col id="header-vertical3" style="width: 20%">
+                        <col id="hashmap">
+                        <col id="hashtable">
+                        <col id="linkedhashmap">
+                        <col id="treemap">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tg-0thz">Methods / DataStructures</th>
+                        <th class="tg-0thz">HashMap</th>
+                        <th class="tg-0thz">HashTable</th>
+                        <th class="tg-0thz">LinkedHashMap</th>
+                        <th class="tg-0thz">TreeMap</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="tg-fymr"><input id="table3-filterInput" type="text" placeholder="search method"></th>
+                        <td class="tg-0thz">Joule</td>
+                        <td class="tg-0thz">Joule</td>
+                        <td class="tg-0thz">Joule</td>
+                        <td class="tg-0thz">Joule</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">clear</th>
+                        <td class="tg-05tu">1.8395</td>
+                        <td class="tg-5fgp">1.5761</td>
+                        <td class="tg-5fgp">1.5025</td>
+                        <td class="tg-84pi">1.6706</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">containsKey</th>
+                        <td class="tg-rovy">2.1343</td>
+                        <td class="tg-84pi">1.8582</td>
+                        <td class="tg-84pi">1.8726</td>
+                        <td class="tg-05tu">1.9452</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">containsValue</th>
+                        <td class="tg-5m3m">8.3615</td>
+                        <td class="tg-kcqh">8.4957</td>
+                        <td class="tg-5fgp">6.1326</td>
+                        <td class="tg-05tu">9.1771</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">entrySet</th>
+                        <td class="tg-lejy">1.8531</td>
+                        <td class="tg-rovy">2.1332</td>
+                        <td class="tg-84pi">1.8362</td>
+                        <td class="tg-d0k2">2.1617</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">get</th>
+                        <td class="tg-5m3m">1.8120</td>
+                        <td class="tg-5fgp">1.4071</td>
+                        <td class="tg-ivaq">1.8252</td>
+                        <td class="tg-j7z7">2.2331</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">iterateAll</th>
+                        <td class="tg-j7z7">2.6673</td>
+                        <td class="tg-5fgp">1.5343</td>
+                        <td class="tg-84pi">1.6462</td>
+                        <td class="tg-kcqh">1.9122</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">keySet</th>
+                        <td class="tg-84pi">1.6813</td>
+                        <td class="tg-d0k2">2.2226</td>
+                        <td class="tg-05tu">1.8328</td>
+                        <td class="tg-rovy">2.1680</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">put
+                        </td>
+                        <td class="tg-d0k2">2.4628</td>
+                        <td class="tg-5fgp">1.3123</td>
+                        <td class="tg-05tu">2.0338</td>
+                        <td class="tg-5fgp">1.4355</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">putAll</th>
+                        <td class="tg-n78w">1.7564</td>
+                        <td class="tg-84pi">1.5949</td>
+                        <td class="tg-05tu">1.8608</td>
+                        <td class="tg-kcqh">1.8914</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">remove</th>
+                        <td class="tg-kcqh">1.9256</td>
+                        <td class="tg-5fgp">1.6067</td>
+                        <td class="tg-d0k2">2.2300</td>
+                        <td class="tg-84pi">1.8133</td>
+                    </tr>
+                    <tr>
+                        <th class="tg-za14">values</th>
+                        <td class="tg-j7z7">2.5755</td>
+                        <td class="tg-rovy">2.2266</td>
+                        <td class="tg-05tu">2.2009</td>
+                        <td class="tg-5fgp">1.4467</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </details>
+            Pereira, R., Couto, M., Saraiva, J., Cunha, J., & Fernandes, J. P. (2016). The influence of the Java
+            collection framework on overall energy consumption. Proceedings of the 5th International Workshop on Green
+            and Sustainable Software, 15–21. <a href="https://doi.org/10.1145/2896967.2896968" target="_blank">https://doi.org/10.1145/2896967.2896968</a>
         </div>
     </div>
 </section>

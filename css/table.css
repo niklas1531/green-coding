@@ -8,10 +8,7 @@
     line-height: 1.5;
     border-radius: 0.25rem;
     margin-bottom: 3%;
-}
-
-.header-mobile {
-    visibility: collapse;
+    margin-top: 3%;
 }
 
 .table-buttons {
@@ -22,9 +19,7 @@
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    background-color: rgb(245, 245, 245);
-    /*border: 1px solid #000;*/
-    /*border-radius: 0.25rem;*/
+    background-color: rgb(0, 0, 0);
 }
 
 .tg td {
@@ -189,15 +184,73 @@
     border-color: inherit;
 }
 
+/*TABELLE 3*/
+.tg .tg-5fgp {
+    background-color: #38761D;
+    border-color: inherit;
+}
+
+.tg .tg-05tu {
+    background-color: #FFE599;
+    border-color: inherit;
+}
+
+.tg .tg-rovy {
+    background-color: #F6B26B;
+    border-color: inherit;
+}
+
+.tg .tg-0thz {
+    border-color: inherit;
+    font-weight: bold;
+}
+
+.tg .tg-za14 {
+    border-color: inherit;
+}
+
+.tg .tg-84pi {
+    background-color: #93C47D;
+    border-color: inherit;
+}
+
+.tg .tg-5m3m {
+    background-color: #FFF2CC;
+    border-color: inherit;
+}
+
+.tg .tg-kcqh {
+    background-color: #FFD966;
+    border-color: inherit;
+}
+
+.tg .tg-lejy {
+    background-color: #D9EAD3;
+    border-color: inherit;
+}
+
+.tg .tg-d0k2 {
+    background-color: #EA9999;
+    border-color: inherit;
+}
+
+.tg .tg-ivaq {
+    background-color: #F9CB9C;
+    border-color: inherit;
+}
+
+.tg .tg-j7z7 {
+    background-color: #E06666;
+    border-color: inherit;
+}
+
+.tg .tg-n78w {
+    background-color: #B6D7A8;
+    border-color: inherit;
+}
+
 
 @media (max-width: 590px) {
-    .header-mobile {
-        visibility: visible;
-    }
-
-    .header-desktop {
-        visibility: collapse;
-    }
 
     .tg td, .tg th {
         font-size: 10px;
