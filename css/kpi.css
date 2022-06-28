@@ -54,7 +54,12 @@
     height: auto;
     display: flex;
 }
-
+.kpi-text-link {
+    color: #28a745;
+}
+.kpi-text-link:hover {
+    color: #28a745;
+}
 @media (max-width: 900px) {
     .kpi-welcome {
         margin-top: 15%;
