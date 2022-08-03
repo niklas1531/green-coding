@@ -1,0 +1,34 @@
+[
+    {
+        "question": "You have a list of elements and you want to add a new one. What would you use?",
+        "a": "ArrayList",
+        "b": "LinkedList",
+        "c": "Vector",
+        "d": "Stack",
+        "correct": "a"
+    },
+    {
+        "question": "Why is it important to use the right data structure?",
+        "a": "Worse runtime",
+        "b": "More energy consumption",
+        "c": "Better runtime",
+        "d": "All apply",
+        "correct": "c"
+    },
+    {
+        "question": "What is the unit of energy consumption calculation?",
+        "a": "Joule",
+        "b": "Watt",
+        "c": "Hertz",
+        "d": "Ampere",
+        "correct": "a"
+    },
+    {
+        "question": "What applies when measuring energy consumption of data structures?",
+        "a": "It depends on your usecase",
+        "b": "measurements are identical",
+        "c": "ArrayList is always superior",
+        "d": "none of the above",
+        "correct": "a"
+    }
+]

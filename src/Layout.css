@@ -1,0 +1,147 @@
+/* GENERAL */
+
+
+/* Dark Mode */
+:root {
+    --bg-grey-color: rgb(245, 245, 245);
+    --bg-beige-color: #e3e2de;
+    --color: #000;
+    --grey-color: #8f8f8f;
+    --box-shadow: 10px 20px 15px silver;
+}
+
+[data-theme="dark-theme"] {
+    --bg-grey-color: #474747;
+    --bg-beige-color: #403f3d;
+    --color: #fff;
+    --grey-color: #fff;
+    --box-shadow: 10px 20px 15px #000;
+}
+
+html,
+body {
+    background-color: #000;
+    height: 100%;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2%;
+
+}
+
+/*SCHATTEN BOX*/
+.box-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/*Textfarbe Schwarz*/
+.black-text-color {
+    color: var(--color);
+}
+
+/*Textfarbe grau*/
+.grey-text-color,
+summary {
+    color: var(--grey-color);
+}
+
+.line {
+    max-width: 50px;
+    border-color: #2eb872;
+    border-width: 3px;
+}
+
+.container-table {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.css-ow0xrr-MuiPaper-root-MuiAlert-root {
+    /*Alert*/
+    width: 40%;
+}
+
+.container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.grey-section {
+    background: var(--bg-grey-color);
+}
+
+.beige-section {
+    background: var(--bg-beige-color);
+}
+
+.banner-text {
+    color: #fafafa;
+    font-weight: 1000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.banner-text h4 {
+    margin-bottom: 3%;
+}
+
+
+.button-swipe {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 5%;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.btn-swipe-div {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    width: 100%;
+    min-height: 50px;
+}
+
+.button-swipe:hover {
+    background-color: darkgreen;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 590px) {
+
+    /*KANN WIEDER GELÖSCHT WERDEN:*/
+    .level2-alert {
+        margin-top: 20%;
+    }
+
+    .css-ow0xrr-MuiPaper-root-MuiAlert-root {
+        /*Alert*/
+        width: 80%;
+    }
+
+    .lead,
+    .text-color {
+        font-size: 1rem;
+    }
+
+    .btn-swipe-div {
+        padding-bottom: 15%;
+    }
+}

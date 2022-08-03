@@ -1,0 +1,28 @@
+.overview {
+    background: url('./background.jpeg');
+    height: 100vh !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.overview-button {
+    color: #28a745;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #28a745;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-right: 1%;
+    border-radius: 0.25rem;
+}
+
+.overview-button:hover {
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+}

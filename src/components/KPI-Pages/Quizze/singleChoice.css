@@ -1,0 +1,133 @@
+  h1 {
+    margin: 20px 0;
+  }
+
+  p {
+    line-height: 1.5em;
+    margin: 0 0 6px 0;
+  }
+
+  .quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    border-radius: .25rem;
+  }
+
+  .start-screen {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    border-radius: .25rem;
+  }
+
+  button {
+    background: #e8e8e8;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid #c9c9c9;
+    border-radius: 0 0 0.25rem.25rem;
+  }
+
+  button.next {
+    background: #28a745;
+    border-bottom: 3px solid #28a745;
+  }
+
+  button.start,
+  button.restart {
+    margin-top: 20px;
+  }
+
+  .question {
+    width: 100%;
+  }
+
+  .questionText {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+
+  .answers {
+    margin-bottom: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .answer {
+    padding: 4px;
+    text-align: center;
+    background: #f3f3f3;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .answer.selected {
+    background: red;
+    font-weight: bold;
+  }
+
+  .answer.correct {
+    background: #28a745;
+    font-weight: bold;
+  }
+
+  .answer.incorrect {
+    background: #28a745;
+
+  }
+
+  .answerStatus {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .progressBar {
+    width: 100%;
+    background: #f3f3f3;
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .progressBar .inner {
+    background: #28a745;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: ease all 0.5s;
+    border-radius: 3px;
+  }
+
+  .progressBar .text {
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 10;
+  }
+
+  @media (max-width: 590px) {
+    .quiz {
+      width: 90%;
+    }
+
+    .quiz-level-div {
+      margin-top: 15%;
+      margin-bottom: 5%;
+    }
+
+    .start-screen {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }

@@ -1,0 +1,45 @@
+.navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-brand h3 {
+    margin-top: 0.5rem;
+}
+
+.navbar-brand h3,
+.nav-link,
+.footer-link,
+.fa-brightness {
+    color: #fff;
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+.navbar-brand h3:hover,
+.nav-link:hover,
+.footer-link:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.dark-mode-btn {
+    border: none;
+    background-color: #000;
+}
+
+.toggler {
+    color: #fff;
+}
+
+.navbar-collapse {
+    text-align: center;
+}

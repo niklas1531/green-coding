@@ -1,0 +1,13 @@
+.page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: .8rem;
+    color: #fff;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}

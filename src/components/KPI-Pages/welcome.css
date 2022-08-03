@@ -1,0 +1,13 @@
+.kpi-welcome-mobile {
+    display: none;
+}
+
+@media (max-width: 590px) {
+    .kpi-welcome-mobile {
+        display: block;
+    }
+
+    .kpi-welcome-desktop {
+        display: none;
+    }
+}
