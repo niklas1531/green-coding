@@ -1,7 +1,7 @@
 {
   "main.css": "/green-coding/static/css/main.ebe5da1e.chunk.css",
-  "main.js": "/green-coding/static/js/main.76c00dfc.chunk.js",
-  "main.js.map": "/green-coding/static/js/main.76c00dfc.chunk.js.map",
+  "main.js": "/green-coding/static/js/main.1de53aa1.chunk.js",
+  "main.js.map": "/green-coding/static/js/main.1de53aa1.chunk.js.map",
   "static/js/1.e103d14a.chunk.js": "/green-coding/static/js/1.e103d14a.chunk.js",
   "static/js/1.e103d14a.chunk.js.map": "/green-coding/static/js/1.e103d14a.chunk.js.map",
   "runtime~main.js": "/green-coding/static/js/runtime~main.0cb59367.js",
@@ -21,6 +21,6 @@
   "static/media/recursion-example.png": "/green-coding/static/media/recursion-example.09a4e99e.png",
   "static/css/main.ebe5da1e.chunk.css.map": "/green-coding/static/css/main.ebe5da1e.chunk.css.map",
   "index.html": "/green-coding/index.html",
-  "precache-manifest.ec5a3c458415dc8665d41e0017ed909c.js": "/green-coding/precache-manifest.ec5a3c458415dc8665d41e0017ed909c.js",
+  "precache-manifest.f84e71107f2fe061ff0338135d3fd49e.js": "/green-coding/precache-manifest.f84e71107f2fe061ff0338135d3fd49e.js",
   "service-worker.js": "/green-coding/service-worker.js"
 }

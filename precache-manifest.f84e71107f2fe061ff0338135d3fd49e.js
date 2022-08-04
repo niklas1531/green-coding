@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "76c00dfccad16a08a132",
+    "revision": "1de53aa186745ef9b5ee",
     "url": "/green-coding/static/css/main.ebe5da1e.chunk.css"
   },
   {
-    "revision": "76c00dfccad16a08a132",
-    "url": "/green-coding/static/js/main.76c00dfc.chunk.js"
+    "revision": "1de53aa186745ef9b5ee",
+    "url": "/green-coding/static/js/main.1de53aa1.chunk.js"
   },
   {
     "revision": "e103d14a0b5f7513af18",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/green-coding/static/media/recursion-example.09a4e99e.png"
   },
   {
-    "revision": "859e3d008471ba5d72c41168064ed30c",
+    "revision": "027360265c81d6708294cb8039073bad",
     "url": "/green-coding/index.html"
   }
 ];
