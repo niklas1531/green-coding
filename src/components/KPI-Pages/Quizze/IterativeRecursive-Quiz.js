@@ -63,7 +63,7 @@ export default function IterativeRecursiveSingleChoice(props) {
         },
         {
             question: "Whether to use iteration or recursion is dependent on .. ?",
-            answers: ["problem and . programming language"],
+            answers: ["nothing. You can decide, what you prefer", "problem and programming language", "data types"],
             correctAnswerIndex: 1
         }
     ]
