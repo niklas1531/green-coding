@@ -11,3 +11,5 @@ Our project is divided into 4 folders:
 
 3. Literature:In this folder you will find **literature.js**, which contains the subpage LITERATURE. All the sources we use on the website are listed here. The **literature.css** is responsible for the design changes in the same way as in the other folders.
 4. The most important folder of the project is the **Components** folder: here are the rest of the files for our website. Each section that can be found on our homepage (About, Contact, KPI, Team) is located in a separate folder. Our two most used components, the navbar and the footer, also have their own folder and the largest folder is the **KPI-pages** folder. Here you will find a separate file for each **dimension page** (Data Structures, Codesize etc.). The **Tables** folder contains the implemented interactive tables that can be found on the Datastructure page and our **Quizzes** folder contains all the quizzes that can be found on the respective Dimensions pages in the "Test Yourself" section.
+
+![](website_description.jpg)
