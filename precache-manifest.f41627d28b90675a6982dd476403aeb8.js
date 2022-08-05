@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/green-coding/static/media/recursion-example.09a4e99e.png"
   },
   {
-    "revision": "e2c63eb1bd2ececffbbdc05e9d23330a",
+    "revision": "12c36468ee0166b776c14bc44e710053",
     "url": "/green-coding/index.html"
   }
 ];
